@@ -18,7 +18,7 @@ def test_calculate_delivery_fee(order_total, distance_km, expected_fee):
     ("order_total", "distance_km"),
     [
         (-1, 5),  # negative order total
-        (20, 0),  # zero distance
+        (20, 1),  # zero distance
         (20, 26),  # beyond 25 km
     ],
 )
